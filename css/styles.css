@@ -1,0 +1,1462 @@
+/* Reseteo de estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+/* Inserción de fuentes locales */
+
+@font-face {
+    font-family: caredrock;
+    src: url(../fuentes/caredrock/otf/CaredrockInline.otf)
+}
+
+@font-face {
+    font-family: brewery;
+    src: url(../fuentes/local-brewery-sans/LocalBrewerySans.ttf)
+}
+
+/* ESTRUCTURA DESKTOP FIRST */
+/* Maquetado de estructura de todos los encabezados */
+
+nav{
+    background-color: black;
+}
+
+.header__logo--img {
+    height: 6rem;
+}
+
+.menu-item li a,
+.menu-item li a:link,
+.menu-item li a:visited {
+    font-family: brewery;
+    font-size: 1.8rem;
+}
+
+/* Maquetado de estructura de todos los pies de pagina */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.footer__arriba {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo {
+    width: 28rem;
+    height: auto;
+}
+
+.footer__bajo {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1rem 0;
+}
+
+.footer__fabrica--subtitulo {
+    color: white;
+    margin: 0 15px;
+    font-family: brewery;
+    font-size: 3.125rem;
+}
+
+.footer__fabrica ul {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.25rem;
+}
+
+.footer__fabrica ul li {
+    list-style-type: none;
+}
+
+.footer__contacto {
+    margin: 0 1.5rem;
+}
+
+.footer__contacto--subtitulo {
+    font-family: brewery;
+    font-size: 3.125rem;
+    color: white;
+}
+
+.footer__contacto a img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+}
+
+.footer__derechos {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-family: caredrock;
+}
+
+
+/* Estructura para la pagina INDEX */
+/* Estilos para el main */
+
+body {
+    width: 99.5;
+    overflow-x: hidden;
+}
+
+.imain {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-areas:    "foto1 foto1 foto1 fotot1"
+                            "prese prese prese prese"
+                            "catal catal catal catal"
+                            "catal catal catal catal"
+                            "clubv clubv clubv clubv"
+                            "clubv clubv clubv clubv";
+    background-color: black;
+    row-gap: 1rem;
+    border-bottom: 5px solid rgb(219, 73, 44);
+}
+
+.imain__figure {
+    grid-area: foto1;
+    justify-self: center;
+    align-self: center;
+}
+
+.imain__figure--foto1 {
+    width: 100vw;
+}
+
+.imain__presentacion {
+    grid-area: prese;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.imain__presentacion--foto {
+    width: 50%;
+}
+
+.imain__presentacion--foto img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.imain__presentacion--texto {
+    width: 50%;
+}
+
+.imain__presentacion--subtitulo {
+    margin: 1.7vw auto;
+    text-align: center;
+    font-family: brewery;
+    font-size: 5vw;
+    color: white;
+}
+
+.imain__presentacion--parrafo {
+    margin: 0 1.7vw;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.7vw;
+    color: white;
+}
+
+.imain__catalogo {
+    grid-area: catal;
+    width: 100vw;
+}
+
+.imain__catalogo--subtitulo {
+    text-align: center;
+    margin: 1rem auto;
+    font-family: brewery;
+    font-size: 5.2vw;
+}
+
+.imain__catalogo--subtitulo a,
+.imain__catalogo--subtitulo a:link,
+.imain__catalogo--subtitulo a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.imain__catalogo--cervezas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imain__catalogo--cervezas figure a img {
+    height: 34.5rem;
+    width: 20rem;
+    border-radius: 12%;
+}
+
+.imain__clubValle {
+    grid-area: clubv;
+    width: 100vw;
+}
+
+.imain__clubValle--subtitulo {
+    text-align: center;
+    margin: 1rem auto;
+    font-family: brewery;
+    font-size: 5.2vw;
+}
+
+.imain__clubValle--subtitulo a,
+.imain__clubValle--subtitulo a:link,
+.imain__clubValle--subtitulo a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.imain__clubValle--img {
+    position: relative;
+    bottom: -0.3rem;
+}
+
+.imain__clubValle--img a img {
+    width: 100%;
+}
+
+/* Estilos para pagina NOSOTROS /*
+/* Estilos para el main */
+
+.nmain {
+    display: grid;
+    grid-template-areas: "foto2 prese2 prese2 prese2";
+    column-gap: 2vw;
+    height: 82vh;
+    background-color: black;
+    border-bottom: 5px solid rgb(219, 73, 44);
+}
+
+.nmain__izq {
+    grid-area: foto2;
+}
+
+.nmain__izq img {
+    height: calc(82vh - 5px);
+}
+
+.nmain__derecha {
+    grid-area: prese2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nmain__subtitulo {
+    margin: 1.5vh 0;
+    color: white;
+    font-family: brewery;
+    font-size: 5.2vw;
+}
+
+.nmain__parrafo {
+    margin: 0 2.5vw;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.56vw;
+}
+
+/* Estilos para pagina CERVEZAS /*
+/* Estilos para el main */
+
+.cmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2.5vh;
+    background-color: black;
+    border-bottom: 5px solid rgb(219, 73, 44);
+}
+
+.cmain__imagen {
+    width: 100vw;
+}
+
+.cmain__subtitulo {
+    color: white;
+    font-family: brewery;
+    font-size: 5.2vw;
+}
+
+/* Estilos para cerveza kolsch */
+
+.cmain__kolsch {
+    margin-top: 2vh;
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.cmain__kolsch--imagen {
+    height: 48rem;
+    width: 28rem;
+    border-radius: 12%;
+}
+
+.cmain__kolsch--descripcion {
+    align-self: flex-start;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmain__kolsch--descripcion h2 {
+    color: white;
+    font-family: brewery;
+    font-size: 4.5vw;
+    align-self: center;
+}
+
+.cmain__kolsch--descripcion ul {
+    margin-top: 1vw;
+}
+
+.cmain__kolsch--descripcion ul li {
+    list-style-type: none;
+    color: white;
+    font-family: caredrock;
+    font-size: 3.7vw;
+}
+
+.cmain__kolsch--descripcion p {
+    margin: 20px 0;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Estilos para cerveza trigo */
+
+.cmain__trigo {
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.cmain__trigo--imagen {
+    height: 48rem;
+    width: 28rem;
+    border-radius: 12%;
+}
+
+.cmain__trigo--descripcion {
+    align-self: flex-start;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmain__trigo--descripcion h2 {
+    color: white;
+    font-family: brewery;
+    font-size: 4.5vw;
+    align-self: center;
+}
+
+.cmain__trigo--descripcion ul {
+    margin-top: 1vw;
+}
+
+.cmain__trigo--descripcion ul li {
+    list-style-type: none;
+    color: white;
+    font-family: caredrock;
+    font-size: 3.7vw;
+}
+
+.cmain__trigo--descripcion p {
+    margin: 20px 0;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Estilos para cerveza irish */
+
+.cmain__irish {
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.cmain__irish--imagen {
+    height: 48rem;
+    width: 28rem;
+    border-radius: 12%;
+}
+
+.cmain__irish--descripcion {
+    align-self: flex-start;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmain__irish--descripcion h2 {
+    color: white;
+    font-family: brewery;
+    font-size: 4.5vw;
+    align-self: center;
+}
+
+.cmain__irish--descripcion ul {
+    margin-top: 1vw;
+}
+
+.cmain__irish--descripcion ul li {
+    list-style-type: none;
+    color: white;
+    font-family: caredrock;
+    font-size: 3.7vw;
+}
+
+.cmain__irish--descripcion p {
+    margin: 20px 0;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Estilos para cerveza porter */
+
+.cmain__porter {
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.cmain__porter--imagen {
+    height: 48rem;
+    width: 28rem;
+    border-radius: 12%;
+}
+
+.cmain__porter--descripcion {
+    align-self: flex-start;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmain__porter--descripcion h2 {
+    color: white;
+    font-family: brewery;
+    font-size: 4.5vw;
+    align-self: center;
+}
+
+.cmain__porter--descripcion ul {
+    margin-top: 1vw;
+}
+
+.cmain__porter--descripcion ul li {
+    list-style-type: none;
+    color: white;
+    font-family: caredrock;
+    font-size: 3.7vw;
+}
+
+.cmain__porter--descripcion p {
+    margin: 20px 0;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Estilos para pagina CLUB VALLE DE LERMA /*
+/* Estilos para el main */
+
+.clmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2.5vh;
+    background-color: black;
+    border-bottom: 5px solid rgb(219, 73, 44);
+}
+
+.clmain__imagen{
+    width: 100vw;
+}
+
+.clmain__subtitulo{
+    color: white;
+    font-family: brewery;
+    font-size: 5.2vw;
+}
+
+/* Membresia estandar */
+
+.clmain__estandar{
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.clmain__estandar--imagen{
+    height: 48.75rem;
+    width: auto;
+    border-radius: 12%;
+}
+
+.clmain__estandar--texto{
+    align-self: flex-start;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.clmain__estandar--texto h2{
+    color: white;
+    font-family: brewery;
+    font-size: 4.5vw;
+    align-self: center;
+}
+
+.clmain__estandar--texto p{
+    margin: 20px 0;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Membresia premium */
+
+.clmain__premium{
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.clmain__premium--imagen{
+    order: 1;
+    height: 48.75rem;
+    width: auto;
+    border-radius: 12%;
+}
+
+.clmain__premium--texto{
+    align-self: flex-start;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.clmain__premium--texto h2{
+    color: white;
+    font-family: brewery;
+    font-size: 4.5vw;
+    align-self: center;
+}
+
+.clmain__premium--texto p{
+    margin: 20px 0;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Tabla comparativa precios */
+
+.clmain__tabla {
+    align-self: center;
+    text-align: center;
+    border: double 5px rgb(219, 73, 44);
+    border-collapse: collapse;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.clmain__tabla--head {
+    color: white;
+    font-family: brewery;
+    font-size: 2.1vw;
+    border: double 5px rgb(219, 73, 44);
+}
+
+.clmain__tabla--head tr th {
+    padding: 0 25px;
+    border: solid 3px rgb(219, 73, 44);
+}
+
+.clmain__tabla tr {
+    border: solid 3px rgb(219, 73, 44);
+    padding: 20px;
+}
+
+.clmain__tabla tr td {
+    border: solid 3px rgb(219, 73, 44);
+    padding: 20px;
+    color: white;
+    font-family: caredrock;
+    font-size: 1.5vw;
+}
+
+.clmain__tabla tr td ul li {
+    list-style-type: none;
+}
+
+/* ESTILOS PARA PAGINA CONTACTO */
+/* Estilos para el main */
+
+.comain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-bottom: 5px solid rgb(219, 73, 44);
+}
+
+.comain__subtitulo {
+    padding: 2vh;
+    color: white;
+    font-family: brewery;
+    font-size: 5.5vw;
+}
+
+.comain__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65vh;
+    color: white;
+}
+
+.comain__form--div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7vh;
+}
+
+.comain__form--div label {
+    color: white;
+    font-family: brewery;
+    font-size: 2vw;
+}
+
+.comain__form--input {
+    height: 3vh;
+    width: 23.5vw;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.comain__form--com {
+    width: 23.5vw;
+    height: 10vh;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.comain__form--enviar,
+.comain__form--rest {
+    display: inline-block
+}
+
+.comain__form--enviar,
+.comain__form--rest {
+    border-radius: 3px;
+    padding: 10px;
+    font-family: brewery;
+    font-size: 1vw;
+    background-color: white;
+}
+
+.comain__form--enviar:hover,
+.comain__form--rest:hover{
+    box-shadow: 1px 1px 5px white;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* Query para tablets "acostadas" */
+
+@media screen and (max-width:1300px) {
+
+    /* Maquetado de estructura para todos los pies de pagina */
+
+    .footer__logo {
+        width: 23vw;
+        height: auto;
+    }
+
+    .footer__fabrica--subtitulo {
+        font-size: 2.60vw;
+    }
+
+    .footer__fabrica ul {
+        font-size: 1.2vw;
+    }
+
+    .footer__contacto--subtitulo {
+        font-size: 2.60vw;
+    }
+
+    .footer__contacto a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .footer__derechos {
+        font-size: 1.5vw;
+    }
+
+    /* Estructura para la pagina INDEX */
+    /* Estilos para el main */
+
+    .imain__catalogo--subtitulo {
+        font-size: 7vw;
+    }
+
+    .imain__catalogo--cervezas {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        column-gap: 4vw;
+        row-gap: 1.3vw;
+    }
+
+    .imain__catalogo--cervezas-kolsch,
+    .imain__catalogo--cervezas-porter {
+        justify-self: flex-end;
+    }
+
+    .imain__clubValle--subtitulo {
+        font-size: 7vw;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* Query para tablets verticales */
+
+@media screen and (max-width:1024px) {
+
+    /* Maquetado de estructura de todos los encabezados */
+
+    .header__menu--item a,
+    .header__menu--item a:link,
+    .header__menu--item:visited {
+        font-size: 1.4rem;
+    }
+
+    .aMedio {
+        margin: 0 1.25vw;
+    }
+
+    .aHome {
+        margin: 0 1.25vw 0 0;
+    }
+
+    .aContacto {
+        margin: 0 0 0 1.25vw;
+    }
+
+    .header__iconos {
+        margin: 0 0.7rem;
+    }
+
+    .header__iconos div {
+        margin: 0 0.3rem;
+    }
+
+    .header__iconos div a img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    /* Maquetado de estructura para todos los pies de pagina */
+
+    .footer__logo {
+        width: 35vw;
+        height: auto;
+    }
+
+    .footer__fabrica--subtitulo {
+        font-size: 4.5vw;
+    }
+
+    .footer__fabrica ul {
+        font-size: 2.2vw;
+    }
+
+    .footer__contacto--subtitulo {
+        font-size: 4.5vw;
+    }
+
+    .footer__contacto a img {
+        width: 3vw;
+        height: 3vw;
+        margin: 0 0.7vw;
+    }
+
+    .footer__derechos {
+        font-size: 2.5vw;
+    }
+
+    /* Estructura para la pagina INDEX */
+    /* Estilos para el main */
+
+    .imain__presentacion {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .imain__presentacion--foto {
+        width: 100%;
+    }
+
+    .imain__presentacion--texto {
+        width: 100%;
+    }
+
+    .imain__presentacion--subtitulo {
+        margin: 1.7vw auto;
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    .imain__presentacion--parrafo {
+        margin: 0 15vw;
+        font-size: 2.7vw;
+    }
+
+    .imain__catalogo--cervezas figure a img {
+        height: 48vw;
+        width: 28vw;
+    }
+
+    /* Estilos para pagina NOSOTROS /*
+    /* Estilos para el main */
+
+    .nmain {
+        grid-template-areas: "foto2"
+            "prese2";
+        column-gap: 0;
+        justify-items: center;
+        align-items: center;
+        background-color: black;
+        border-bottom: 5px solid rgb(219, 73, 44);
+        height: auto;
+    }
+
+    .nmain__izq img {
+        height: auto;
+        width: 100vw;
+    }
+
+    .nmain__subtitulo {
+        margin: 0;
+        margin-top: 2vw;
+        font-size: 7vw;
+    }
+
+    .nmain__parrafo {
+        margin: 0 5vw;
+        margin-bottom: 3vw;
+        font-size: 2.7vw;
+        line-height: 3.6vw;
+    }
+
+    /* Estilos para pagina CERVEZAS /*
+    /* Estilos para el main */
+
+    .cmain__subtitulo {
+        font-size: 7vw;
+    }
+
+    /* Estilos para cerveza kolsch */
+
+    .cmain__kolsch {
+        grid-template-columns: 1fr;
+        grid-template-areas:    "descp"
+                                "imagen"
+                                "imagen";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cmain__kolsch--descripcion {
+        grid-area: descp;
+    }
+
+    .cmain__kolsch--descripcion h2 {
+        font-size: 6vw;
+    }
+
+    .cmain__kolsch--descripcion ul li {
+        font-size: 5vw;
+    }
+
+    .cmain__kolsch--descripcion p {
+        font-size: 3vw;
+    }
+
+    .cmain__kolsch--imagen {
+        grid-area: imagen;
+        height: 77vw;
+        width: 45vw;
+    }
+
+    /* Estilos para cerveza trigo */
+
+    .cmain__trigo {
+        margin-top: 3vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "descp"
+                                "imagen"
+                                "imagen";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cmain__trigo--descripcion {
+        grid-area: descp;
+    }
+
+    .cmain__trigo--descripcion h2 {
+        font-size: 6vw;
+    }
+
+    .cmain__trigo--descripcion ul li {
+        font-size: 5vw;
+    }
+
+    .cmain__trigo--descripcion p {
+        font-size: 3vw;
+    }
+
+    .cmain__trigo--imagen {
+        grid-area: imagen;
+        height: 77vw;
+        width: 45vw;
+    }
+
+    /* Estilos para cerveza irish */
+
+    .cmain__irish {
+        margin-top: 3vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "descp"
+                                "imagen"
+                                "imagen";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cmain__irish--descripcion {
+        grid-area: descp;
+    }
+
+    .cmain__irish--descripcion h2 {
+        font-size: 6vw;
+    }
+
+    .cmain__irish--descripcion ul li {
+        font-size: 5vw;
+    }
+
+    .cmain__irish--descripcion p {
+        font-size: 3vw;
+    }
+
+    .cmain__irish--imagen {
+        grid-area: imagen;
+        height: 77vw;
+        width: 45vw;
+    }
+
+    /* Estilos para cerveza porter */
+
+    .cmain__porter {
+        margin-top: 3vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "descp"
+                                "imagen"
+                                "imagen";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cmain__porter--descripcion {
+        grid-area: descp;
+    }
+
+    .cmain__porter--descripcion h2 {
+        font-size: 6vw;
+    }
+
+    .cmain__porter--descripcion ul li {
+        font-size: 5vw;
+    }
+
+    .cmain__porter--descripcion p {
+        font-size: 3vw;
+    }
+
+    .cmain__porter--imagen {
+        grid-area: imagen;
+        height: 77vw;
+        width: 45vw;
+    }
+
+    /* Estilos para pagina CLUB VALLE DE LERMA /*
+    /* Estilos para el main */  
+
+    .clmain__subtitulo{
+        font-size: 7vw;
+    }
+ 
+    /* Membresia estandar */
+
+    .clmain__estandar{
+        margin-top: 5vh;
+        display: grid;
+        grid-template-rows: 0.5fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
+    .clmain__estandar--imagen{
+        height: 77vw;
+        order: 1;
+    }
+
+    .clmain__estandar--texto h2{
+        font-size: 6vw;
+    }
+
+    .clmain__estandar--texto p{
+        font-size: 3vw;
+    }
+    
+    /* Membresia premium */
+
+    .clmain__premium{
+        margin-top: 5vh;
+        display: grid;
+        grid-template-rows: 0.5fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
+    .clmain__premium--imagen{
+        height: 77vw;
+    }
+
+    .clmain__premium--texto h2{
+        font-size: 6vw;
+    }
+
+    .clmain__premium--texto p{
+        font-size: 3vw;
+    }
+
+    /* Tabla comparativa precios */
+
+    .clmain__tabla--head {
+        font-size: 5vw;
+    }
+
+    .clmain__tabla tr td {
+        font-size: 3.5vw;
+    }
+
+    /* ESTILOS PARA PAGINA CONTACTO */
+    /* Estilos para el main */
+
+    .comain__subtitulo {
+        font-size: 7vw;
+    }
+
+    .comain__form--div label {
+        font-size: 4.5vw;
+    }
+
+    .comain__form--input {
+        width: 55vw;
+        font-size: 3vw;
+    }
+
+    .comain__form--com {
+        width: 55vw;
+        font-size: 3vw;
+    }
+
+    .comain__form--enviar,
+    .comain__form--rest {
+        display: inline-block
+    }
+
+    .comain__form--enviar,
+    .comain__form--rest {
+        font-size: 3vw;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/* Query para ajuste de logo */
+
+@media screen and (max-width:768px) {
+    /* Estilos del nav */
+
+    .header__logo--img {
+        height: 4rem;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/* Query para celulares y tablets pequeñas */
+
+@media screen and (max-width:650px) {
+
+    /* Maquetado de estructura para todos los pies de pagina */
+
+    .footer__logo {
+        width: 60vw;
+        height: auto;
+    }
+
+    .footer__bajo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    .footer__fabrica--subtitulo {
+        text-align: center;
+        font-size: 6.5vw;
+        margin: 0;
+        margin-bottom: 1vw;
+    }
+
+    .footer__fabrica ul {
+        text-align: start;
+        font-size: 3.5vw;
+        margin: 0;
+        margin-bottom: 5vw;
+    }
+
+    .footer__contacto {
+        margin: 0;
+    }
+
+    .footer__contacto--subtitulo {
+        font-size: 6.5vw;
+        margin: 0;
+        margin-bottom: 1vw;
+    }
+
+    .footer__contacto a img {
+        width: 3.2vw;
+        height: 3.2vw;
+        margin: 0 1.7vw;
+    }
+
+    .footer__derechos {
+        font-size: 3.5vw;
+    }
+
+    /* Estructura para la pagina INDEX */
+    /* Estilos para el main */
+
+    .imain__presentacion--subtitulo {
+        font-size: 9vw;
+    }
+
+    .imain__presentacion--parrafo {
+        font-size: 4.5vw;
+        margin: 0 10vw;
+    }
+
+    .imain__catalogo--subtitulo {
+        font-size: 9vw;
+    }
+
+    .imain__catalogo--cervezas figure a img {
+        height: 60vw;
+        width: 35vw;
+    }
+
+    .imain__catalogo--cervezas-kolsch,
+    .imain__catalogo--cervezas-porter {
+        justify-self: flex-end;
+    }
+
+    .imain__clubValle--subtitulo {
+        font-size: 9vw;
+    }
+
+    /* Estilos para pagina NOSOTROS /*
+    /* Estilos para el main */
+
+    .nmain__subtitulo {
+        font-size: 9vw;
+    }
+
+    .nmain__parrafo {
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+
+    /* Estilos para pagina CERVEZAS /*
+    /* Estilos para el main */
+
+    .cmain__subtitulo {
+        font-size: 9vw;
+    }
+    
+    /* Estilos para cerveza kolsch */
+
+    .cmain__kolsch {
+        margin-left: 0;
+    }
+
+    .cmain__kolsch--descripcion h2 {
+        font-size: 7.5vw;
+    }
+
+    .cmain__kolsch--descripcion ul li {
+        font-size: 7vw;
+    }
+
+    .cmain__kolsch--descripcion p {
+        font-size: 4.5vw;
+    }
+
+    .cmain__kolsch--imagen {
+        height: auto;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    /* Estilos para cerveza trigo */
+
+    .cmain__trigo {
+        margin-left: 0;
+    }
+
+    .cmain__trigo--descripcion h2 {
+        font-size: 7.5vw;
+    }
+
+    .cmain__trigo--descripcion ul li {
+        font-size: 7vw;
+    }
+
+    .cmain__trigo--descripcion p {
+        font-size: 4.5vw;
+    }
+
+    .cmain__trigo--imagen {
+        height: auto;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    /* Estilos para cerveza irish */
+
+    .cmain__irish {
+        margin-left: 0;
+    }
+
+    .cmain__irish--descripcion h2 {
+        font-size: 7.5vw;
+    }
+
+    .cmain__irish--descripcion ul li {
+        font-size: 7vw;
+    }
+
+    .cmain__irish--descripcion p {
+        font-size: 4.5vw;
+    }
+
+    .cmain__irish--imagen {
+        height: auto;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    /* Estilos para cerveza porter */
+
+    .cmain__porter {
+        margin-left: 0;
+    }
+
+    .cmain__porter--descripcion h2 {
+        font-size: 7.5vw;
+    }
+
+    .cmain__porter--descripcion ul li {
+        font-size: 7vw;
+    }
+
+    .cmain__porter--descripcion p {
+        font-size: 4.5vw;
+    }
+
+    .cmain__porter--imagen {
+        height: auto;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    /* Estilos para pagina CLUB VALLE DE LERMA /*
+    /* Estilos para el main */  
+
+    .clmain__subtitulo{
+        font-size: 9vw;
+    }
+ 
+    /* Membresia estandar */
+
+    .clmain__estandar{
+        margin-top: 2vh;
+    }
+
+    .clmain__estandar--imagen{
+        width: 100vw;
+        height: auto;
+        border-radius: 0;
+        order: 1;
+    }
+
+    .clmain__estandar--texto h2{
+        font-size: 7.5vw;
+    }
+
+    .clmain__estandar--texto p{
+        font-size: 4.5vw;
+    }
+    
+    /* Membresia premium */
+
+    .clmain__premium{
+        margin-top: 2vh;
+    }
+
+    .clmain__premium--imagen{
+        width: 100vw;
+        height: auto;
+        border-radius: 0;
+        order: 1;
+    }
+
+    .clmain__premium--texto h2{
+        font-size: 7.5vw;
+    }
+
+    .clmain__premium--texto p{
+        font-size: 4.5vw;
+    }
+
+    /* Tabla comparativa precios */
+
+    .clmain__tabla--head {
+        font-size: 6vw;
+    }
+
+    .clmain__tabla tr td {
+        font-size: 5vw;
+    }
+
+    /* ESTILOS PARA PAGINA CONTACTO */
+    /* Estilos para el main */
+
+    .comain__subtitulo {
+        font-size: 9vw;
+    }
+
+    .comain__form--div label {
+        font-size: 6vw;
+    }
+
+    .comain__form--input {
+        width: 55vw;
+        font-size: 4.5vw;
+    }
+
+    .comain__form--com {
+        width: 55vw;
+        font-size: 4.5vw;
+    }
+
+    .comain__form--enviar,
+    .comain__form--rest {
+        display: inline-block
+    }
+
+    .comain__form--enviar,
+    .comain__form--rest {
+        font-size: 4.5vw;
+    }
+
+}
+
+/*________________________________________________________________________________*/
+
+@keyframes rotar{
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav div a img{
+    animation-name: rotar;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

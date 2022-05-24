@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- Inserción de favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <!-- Link del CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Contacto</title>
+</head>
+
+<body>
+     <!-- Menu desplegable de bootstrap -->
+    <header class="border-bottom border-danger border-4 sticky-top">
+
+        <nav class="navbar navbar-expand-md navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/favicon.png" alt="logo valle de lerma"
+                        class="header__logo--img"></a>
+                <button class="navbar-toggler btn btn-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-item">
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="cervezas.html">Cervezas</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page" href="club-vdl.html">Club</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="comain">
+        <h1 class="comain__subtitulo">Mandanos un mensaje</h1>
+
+        <form class="comain__form"> 
+
+            <div class="comain__form--div">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" class="comain__form--input" required>
+            </div>
+            <div class="comain__form--div">
+                <label for="mail">Email: </label>
+                <input type="email" name="mail" class="comain__form--input" required>
+            </div>
+            <div class="comain__form--div">
+                <label for="tel">Telefono: </label>
+                <input type="tel" name="tel" class="comain__form--input" required>
+            </div>
+            <div class="comain__form--div">
+                <label for="comentarios">Mensaje: </label>
+                <textarea name="comentarios" class="comain__form--com"></textarea>
+            </div>
+            <div class="comain__form--botones">
+                <input type="submit" value="Enviar" class="comain__form--enviar">
+                <input type="reset" value="Restablecer" class="comain__form--rest">
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+
+        <section class="footer__arriba">
+            <img src="../img/logoH.png" alt="Logo institucional" class="footer__logo">
+        </section>
+
+        <section class="footer__bajo">
+
+            <!-- Sub-bloque de información de fábrica-->
+            <div class="footer__fabrica">
+                <h2 class="footer__fabrica--subtitulo">Fabrica</h2>
+                <ul>
+                    <li>Calle O'Higgins 1120</li>
+                    <li>Ciudad de Salta</li>
+                    <li>Argentina</li>
+                </ul>
+            </div>
+
+            <!-- Sub-bloque de información de contacto-->
+            <div class="footer__contacto">
+                <h2 class="footer__contacto--subtitulo">Contacto</h2>
+                <a href="https://www.facebook.com/cervezavalledelerma" target="_blank"><img
+                        src="../img/facebook-icono.png" alt="Seguínos en facebook" height="30" width="30"></a>
+                <a href="https://www.instagram.com/cervezavalledelerma/" target="_blank"><img
+                        src="../img/Instagram-icono.png" alt="Seguínos en instagram" height="30" width="30"></a>
+                <a href="https://wa.me/543875793306" target="_blank"><img src="../img/whatsapp-icono.png"
+                        alt="Contactanos por WhatsApp" height="30" width="30"></a>
+            </div>
+
+        </section>
+
+        <!-- Derechos-->
+        <h2 class="footer__derechos">2022. Cerveza Valle de Lerma. Todos los derechos reservados.</h2>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

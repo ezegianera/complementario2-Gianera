@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Inserción de favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <!-- Link del CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <title>Club Valle de Lerma</title>
+</head>
+
+<body>
+     <!-- Menu desplegable de bootstrap -->
+    <header class="border-bottom border-danger border-4 sticky-top">
+
+        <nav class="navbar navbar-expand-md navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/favicon.png" alt="logo valle de lerma"
+                        class="header__logo--img"></a>
+                <button class="navbar-toggler btn btn-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-item">
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="cervezas.html">Cervezas</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page" href="club-vdl.html">Club</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link active text-light" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+
+    </header>
+
+    <main class="clmain">
+        <img src="../img/club.jpg" alt="Club valle de lerma" class="clmain__imagen">
+        <h1 class="clmain__subtitulo">Club Valle de Lerma</h1>
+
+        <!-- Sub-bloque contenedor para membresía estándar-->
+        <div class="clmain__estandar">
+            <img src="../img/clube.jpg" alt="Club estándar" class="clmain__estandar--imagen">
+            <div class="clmain__estandar--texto">
+                <h2>Membresia estandar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ex,        delectus natus in fugit suscipit ad
+                    porro soluta architecto tempora!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit corrupti nam laudantium a provident
+                    quidem totam esse eos pariatur, alias odit fuga ipsam. Officiis voluptatem, nam illum minus repellat
+                    nisi.</p>
+            </div>
+        </div>
+
+        <!-- Sub-bloque contenedor para membresía premium-->
+        <div class="clmain__premium">
+            <img src="../img/clubp.jpg" alt="Club premium" class="clmain__premium--imagen">
+            <div class="clmain__premium--texto">
+                <h2>Membresia premium</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam totam optio laudantium quos
+                    magnam
+                    possimus ab ullam quam, architecto soluta a nihil asperiores cupiditate impedit iusto. Atque,
+                    blanditiis
+                    sapiente.</p>
+            </div>
+        </div>
+
+        <!-- Tabla comparativa de precios-->
+        <table class="clmain__tabla">
+            <thead class="clmain__tabla--head">
+                <tr>
+                    <th>Club estandar</th>
+                    <th>Club premium</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    Beneficios estándar:
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                </td>
+                <td>
+                    Beneficios premium:
+                    <ul>
+                        <li>D</li>
+                        <li>E</li>
+                        <li>F</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Precio $XX/mes</td>
+                <td>Precio $YY/mes</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer class="footer">
+
+        <section class="footer__arriba">
+            <img src="../img/logoH.png" alt="Logo institucional" class="footer__logo">
+        </section>
+
+        <section class="footer__bajo">
+
+            <!-- Sub-bloque de información de fábrica-->
+            <div class="footer__fabrica">
+                <h2 class="footer__fabrica--subtitulo">Fabrica</h2>
+                <ul>
+                    <li>Calle O'Higgins 1120</li>
+                    <li>Ciudad de Salta</li>
+                    <li>Argentina</li>
+                </ul>
+            </div>
+
+            <!-- Sub-bloque de información de contacto-->
+            <div class="footer__contacto">
+                <h2 class="footer__contacto--subtitulo">Contacto</h2>
+                <a href="https://www.facebook.com/cervezavalledelerma" target="_blank"><img
+                        src="../img/facebook-icono.png" alt="Seguínos en facebook" height="30" width="30"></a>
+                <a href="https://www.instagram.com/cervezavalledelerma/" target="_blank"><img
+                        src="../img/Instagram-icono.png" alt="Seguínos en instagram" height="30" width="30"></a>
+                <a href="https://wa.me/543875793306" target="_blank"><img src="../img/whatsapp-icono.png"
+                        alt="Contactanos por WhatsApp" height="30" width="30"></a>
+            </div>
+
+        </section>
+
+        <!-- Derechos-->
+        <h2 class="footer__derechos">2022. Cerveza Valle de Lerma. Todos los derechos reservados.</h2>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
